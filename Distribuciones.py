@@ -19,22 +19,22 @@ with st.sidebar:
 # Función para crear la gráfica de la binomial
  def plot_binomial_distribution(n, p):
     # Valores posibles de la variable aleatoria binomial
-    x = np.arange(0, n + 1, 1)
+     x = np.arange(0, n + 1, 1)
 
     # Función de masa de probabilidad (PMF)
-    pmf = binom.pmf(x, n, p)
+     pmf = binom.pmf(x, n, p)
 
     # Crear la gráfica
-    fig, ax = plt.subplots()
-    ax.bar(x, pmf, color='blue', alpha=0.7)
+     fig, ax = plt.subplots()
+     ax.bar(x, pmf, color='blue', alpha=0.7)
 
     # Añadir títulos y etiquetas
-    ax.set_title('Distribución Binomial')
-    ax.set_xlabel('Número de éxitos')
-    ax.set_ylabel('Probabilidad')
-    ax.grid(True)
+     ax.set_title('Distribución Binomial')
+     ax.set_xlabel('Número de éxitos')
+     ax.set_ylabel('Probabilidad')
+     ax.grid(True)
 
-    return fig
+     return fig
 
 # Streamlit app
 st.title("Visualización de la Distribución Binomial")
