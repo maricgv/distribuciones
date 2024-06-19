@@ -4,7 +4,7 @@ import streamlit as st
 # Importar librerías necesarias
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.stats import binom
+from scipy.stats import binom,poisson
 
 # Título de la aplicación
 st.title('Distribuciones de Probabilidad')
