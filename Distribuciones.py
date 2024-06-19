@@ -2,9 +2,9 @@
 import streamlit as st
 
 # Importar librerías necesarias
-#import numpy as np
-#import matplotlib.pyplot as plt
-#from scipy.stats import binom
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.stats import binom
 
 # Título de la aplicación
 st.title('Distribuciones de Probabilidad')
@@ -37,7 +37,7 @@ st.markdown("#### Act. Luz María Lavín-Alanís")
  #   return fig
 
 # Streamlit app
-st.title("Visualización de la Distribución Binomial")
+#st.title("Visualización de la Distribución Binomial")
 
 # Input parameters
 #n = st.slider('Número de ensayos (n)', 1, 100, 10)
