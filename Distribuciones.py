@@ -13,12 +13,13 @@ st.markdown("#### Mtro. Rubén Romero-Ruiz")
 st.markdown("#### Act. Luz María Lavín-Alanís")
 
 # Barra lateral
+with st.sidebar:
+    st.write("En este dashboard se muestran las distribuciones de probabilidad Binomial, Poisson y Normal.")
 
-
-# Function to create the binomial distribution plot
+# Función para crear la gráfica de la binomial
 def plot_binomial_distribution(n, p):
     # Valores posibles de la variable aleatoria binomial
-    x = np.arange(0, n + 1)
+    x = np.arange(0, n + 1, 1)
 
     # Función de masa de probabilidad (PMF)
     pmf = binom.pmf(x, n, p)
@@ -46,5 +47,5 @@ p = st.slider('Probabilidad de éxito (p)', 0.0, 0.5, 1.0)
 fig = plot_binomial_distribution(n, p)
 
 # Display plot in Streamlit
-st.pyplot(fig)
+st.matplotlib.pyplot(fig)
 
