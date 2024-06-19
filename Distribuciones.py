@@ -32,7 +32,7 @@ def plot_binomial_distribution(n, p):
 
     # Fijar los límites de los ejes
     ax.set_xlim(0, 100)  # Límite del eje X
-    ax.set_ylim(0, 0.5) # Límite del eje Y
+    ax.set_ylim(0, 0.35) # Límite del eje Y
 
     # Añadir títulos y etiquetas
     ax.set_title('Distribución Binomial')
