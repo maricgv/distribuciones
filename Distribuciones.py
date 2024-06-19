@@ -48,36 +48,6 @@ p = st.slider('Probabilidad de éxito (p)', 0.0, 1.0, 0.5)
 fig1 = plot_binomial_distribution(n, p)
 
 # Display plot in Streamlit
-st.pyplot(fig)
+st.pyplot(fig1)
 
-# Función para crear la gráfica de la distribución de Poisson
-def plot_poisson_distribution(mu):
-    # Valores posibles de la variable aleatoria Poisson
-    x = np.arange(0, mu * 3 + 1)
 
-    # Función de masa de probabilidad (PMF)
-    pmf = poisson.pmf(x, mu)
-
-    # Crear la gráfica
-    fig2, ax = plt.subplots()
-    ax.bar(x, pmf, color='blue', alpha=0.7)
-
-    # Añadir títulos y etiquetas
-    ax.set_title('Distribución de Poisson')
-    ax.set_xlabel('Número de eventos')
-    ax.set_ylabel('Probabilidad')
-    ax.grid(True)
-
-    return fig2
-
-# Aplicación de Streamlit
-st.title("Visualización de la Distribución de Poisson")
-
-# Parámetro de entrada
-mu = st.slider('Tasa promedio de eventos (mu)', 0.1, 20.0, 3.0)
-
-# Generar gráfica
-fig2 = plot_poisson_distribution(mu)
-
-# Mostrar gráfica en Streamlit
-st.pyplot(fig2)
