@@ -8,12 +8,13 @@ from scipy.stats import binom
 
 # Título de la aplicación
 st.title('Distribuciones de Probabilidad')
-st.markdown("#### Dra. MariCarmen González-Videgaray")
-st.markdown("#### Mtro. Rubén Romero-Ruiz")
-st.markdown("#### Act. Luz María Lavín-Alanís")
 
 # Barra lateral
 with st.sidebar:
+    st.markdown("# Distribuciones de Probabilidad")
+    st.markdown("#### Dra. MariCarmen González-Videgaray")
+    st.markdown("#### Mtro. Rubén Romero-Ruiz")
+    st.markdown("#### Act. Luz María Lavín-Alanís")
     st.write("En este dashboard se muestran las distribuciones de probabilidad Binomial, Poisson y Normal.")
 
 # Función para crear la gráfica de la binomial
