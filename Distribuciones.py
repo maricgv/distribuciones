@@ -99,6 +99,10 @@ def plot_normal_distribution(mean, std_dev):
     fig3, ax = plt.subplots()
     ax.plot(x, pdf, color='blue')
 
+    # Fijar los límites de los ejes
+    ax.set_xlim(-14, 14)  # Límite del eje X
+    ax.set_ylim(0, 1) # Límite del eje Y
+
     # Añadir títulos y etiquetas
     ax.set_title('Distribución Normal')
     ax.set_xlabel('Valor')
