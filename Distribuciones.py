@@ -18,17 +18,17 @@ with st.sidebar:
 
 # Función para crear la gráfica de la binomial
  def plot_binomial_distribution(n, p):
-    # Valores posibles de la variable aleatoria binomial
+     # Valores posibles de la variable aleatoria binomial
      x = np.arange(0, n + 1, 1)
 
-    # Función de masa de probabilidad (PMF)
+     # Función de masa de probabilidad (PMF)
      pmf = binom.pmf(x, n, p)
 
-    # Crear la gráfica
+     # Crear la gráfica
      fig, ax = plt.subplots()
      ax.bar(x, pmf, color='blue', alpha=0.7)
 
-    # Añadir títulos y etiquetas
+     # Añadir títulos y etiquetas
      ax.set_title('Distribución Binomial')
      ax.set_xlabel('Número de éxitos')
      ax.set_ylabel('Probabilidad')
