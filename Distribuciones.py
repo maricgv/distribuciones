@@ -71,7 +71,7 @@ def plot_poisson_distribution(mu):
     return fig2
 
 # Aplicación de Streamlit
-st.title("Visualización de la Distribución de Poisson")
+st.markdown("## Visualización de la Distribución de Poisson")
 
 # Parámetro de entrada
 mu = st.slider('Tasa promedio de eventos (mu)', 0.1, 20.0, 3.0)
