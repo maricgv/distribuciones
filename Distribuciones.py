@@ -38,7 +38,7 @@ def plot_binomial_distribution(n, p):
     return fig1
 
 # Streamlit app
-st.subtitle("Visualización de la Distribución Binomial")
+st.markdown("## Visualización de la Distribución Binomial")
 
 # Input parameters
 n = st.slider('Número de ensayos (n)', 1, 100, 10)
