@@ -14,8 +14,6 @@ st.markdown("#### Act. Luz María Lavín-Alanís")
 
 # Barra lateral
 
-with st.sidebar:
-    st.write("En este dashboard se muestran las distribuciones de probabilidad Binomial, Poisson y Normal.")
 
 # Function to create the binomial distribution plot
 def plot_binomial_distribution(n, p):
