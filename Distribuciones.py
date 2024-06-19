@@ -30,6 +30,10 @@ def plot_binomial_distribution(n, p):
     fig1, ax = plt.subplots()
     ax.bar(x, pmf, color='blue', alpha=0.7)
 
+    # Fijar los límites de los ejes
+    ax.set_xlim(0, 100)  # Límite del eje X
+    ax.set_ylim(0, 0.5) # Límite del eje Y
+
     # Añadir títulos y etiquetas
     ax.set_title('Distribución Binomial')
     ax.set_xlabel('Número de éxitos')
