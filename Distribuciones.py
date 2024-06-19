@@ -42,7 +42,7 @@ st.title("Visualización de la Distribución Binomial")
 
 # Input parameters
 n = st.slider('Número de ensayos (n)', 1, 100, 10)
-p = st.slider('Probabilidad de éxito (p)', 0.0, 1.0, 0.5)
+p = st.slider('Probabilidad de éxito (p)', 0.0, 0.5, 1.0)
 
 # Generate plot
 fig = plot_binomial_distribution(n, p)
