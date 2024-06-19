@@ -11,6 +11,7 @@ st.title('Distribuciones de Probabilidad')
 
 # Barra lateral
 with st.sidebar:
+    st.image("UNAM.png")
     st.markdown("# Distribuciones de Probabilidad")
     st.markdown("#### Dra. MariCarmen González-Videgaray")
     st.markdown("#### Mtro. Rubén Romero-Ruiz")
