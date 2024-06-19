@@ -4,7 +4,7 @@ import streamlit as st
 # Importar librerías necesarias
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.stats import binom,poisson
+from scipy.stats import binom, poisson, norm
 
 # Título de la aplicación
 st.title('Distribuciones de Probabilidad')
@@ -81,3 +81,36 @@ fig2 = plot_poisson_distribution(mu)
 
 # Mostrar gráfica en Streamlit
 st.pyplot(fig2)
+
+# Función para crear la gráfica de la distribución normal
+def plot_normal_distribution(mean, std_dev):
+    # Rango de valores para la variable aleatoria normal
+    x = np.linspace(mean - 4*std_dev, mean + 4*std_dev, 1000)
+
+    # Función de densidad de probabilidad (PDF)
+    pdf = norm.pdf(x, mean, std_dev)
+
+    # Crear la gráfica
+    fig3, ax = plt.subplots()
+    ax.plot(x, pdf, color='blue')
+
+    # Añadir títulos y etiquetas
+    ax.set_title('Distribución Normal')
+    ax.set_xlabel('Valor')
+    ax.set_ylabel('Densidad de probabilidad')
+    ax.grid(True)
+
+    return fig3
+
+# Aplicación de Streamlit
+st.markdown("## Visualización de la Distribución Normal")
+
+# Parámetros de entrada
+mean = st.slider('Media (mean)', -10.0, 10.0, 0.0)
+std_dev = st.slider('Desviación estándar (std_dev)', 0.1, 5.0, 1.0)
+
+# Generar gráfica
+fig3 = plot_normal_distribution(mean, std_dev)
+
+# Mostrar gráfica en Streamlit
+st.pyplot(fig3)
