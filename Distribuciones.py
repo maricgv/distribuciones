@@ -13,8 +13,8 @@ st.markdown("#### Mtro. Rubén Romero-Ruiz")
 st.markdown("#### Act. Luz María Lavín-Alanís")
 
 # Barra lateral
-#with st.sidebar:
-#    st.write("En este dashboard se muestran las distribuciones de probabilidad Binomial, Poisson y Normal.")
+with st.sidebar:
+    st.write("En este dashboard se muestran las distribuciones de probabilidad Binomial, Poisson y Normal.")
 
 # Función para crear la gráfica de la binomial
 # def plot_binomial_distribution(n, p):
