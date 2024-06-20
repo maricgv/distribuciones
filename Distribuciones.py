@@ -17,9 +17,9 @@ with st.sidebar:
     st.markdown("#### Mtro. Rubén Romero-Ruiz")
     st.markdown("#### Act. Luz María Lavín-Alanís")
     st.write("En este dashboard se muestran las distribuciones de probabilidad Binomial, Poisson y Normal.")
-    st.latex(\begin{equation}
+    st.latex(r'''\begin{equation}
 P(X = k) = \binom{n}{k} p^k (1 - p)^{n - k}
-\end{equation}
+\end{equation}'''
 )
 
 # Función para crear la gráfica de la binomial
