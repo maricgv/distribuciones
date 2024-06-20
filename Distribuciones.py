@@ -18,14 +18,19 @@ with st.sidebar:
     st.markdown("#### Act. Luz María Lavín-Alanís")
     st.write("En este dashboard se muestran las distribuciones de probabilidad:")
     st.write("Binomial:")
-    st.latex(r'''\begin{*equation}
+    st.latex(r'''\begin{equation}
 P(X = k) = \binom{n}{k} p^k (1 - p)^{n - k}
-\end{*equation}'''
+\end{equation}'''
 )
     st.write("Poisson:")
     st.latex(r'''\begin{equation}
 P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}
 \end{equation}''')
+
+    st.write("Normal:")
+    st.latex(r'''\[
+f(x) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}
+\]''')
 
 # Función para crear la gráfica de la binomial
 def plot_binomial_distribution(n, p):
