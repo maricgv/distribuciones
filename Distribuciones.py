@@ -22,6 +22,10 @@ with st.sidebar:
 P(X = k) = \binom{n}{k} p^k (1 - p)^{n - k}
 \end{equation}'''
 )
+    st.write("Poisson:")
+    st.latex(r'''\begin{equation}
+P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}
+\end{equation}''')
 
 # Función para crear la gráfica de la binomial
 def plot_binomial_distribution(n, p):
