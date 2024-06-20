@@ -23,9 +23,9 @@ P(X = k) = \binom{n}{k} p^k (1 - p)^{n - k}
 \end{equation}'''
 )
     st.write("Poisson:")
-    st.latex(r'''\begin{equation}
+    st.latex(r'''
 P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}
-\end{equation}''')
+''')
 
     st.write("Normal:")
     st.latex(r'''\begin{equation}
