@@ -17,6 +17,7 @@ with st.sidebar:
     st.markdown("#### Mtro. Rubén Romero-Ruiz")
     st.markdown("#### Act. Luz María Lavín-Alanís")
     st.write("En este dashboard se muestran las distribuciones de probabilidad Binomial, Poisson y Normal.")
+    st.markdown("$$P(X = k) = \binom{n}{k} p^k (1 - p)^{n - k}$$")
 
 # Función para crear la gráfica de la binomial
 def plot_binomial_distribution(n, p):
