@@ -18,9 +18,9 @@ with st.sidebar:
     st.markdown("#### Act. Luz María Lavín-Alanís")
     st.write("En este dashboard se muestran las distribuciones de probabilidad:")
     st.write("Binomial:")
-    st.latex(r'''\begin{equation}
+    st.latex(r'''\begin{*equation}
 P(X = k) = \binom{n}{k} p^k (1 - p)^{n - k}
-\end{equation}'''
+\end{*equation}'''
 )
     st.write("Poisson:")
     st.latex(r'''\begin{equation}
