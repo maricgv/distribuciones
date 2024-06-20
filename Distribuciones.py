@@ -28,9 +28,9 @@ P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}
 \end{equation}''')
 
     st.write("Normal:")
-    st.latex(r'''\[
+    st.latex(r'''\begin{equation}
 f(x) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}
-\]''')
+\end{equation}''')
 
 # Función para crear la gráfica de la binomial
 def plot_binomial_distribution(n, p):
