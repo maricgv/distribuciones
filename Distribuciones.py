@@ -93,7 +93,7 @@ def plot_poisson_distribution(mu):
 st.markdown("## Visualización de la Distribución de Poisson")
 
 # Parámetro de entrada
-mu = st.slider('Tasa promedio de eventos (mu)', 0.1, 20.0, 3.0)
+mu = st.slider('Tasa promedio de eventos (lambda)', 0.1, 20.0, 3.0)
 
 # Generar gráfica
 fig2 = plot_poisson_distribution(mu)
