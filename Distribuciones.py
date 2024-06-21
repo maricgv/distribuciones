@@ -129,8 +129,8 @@ def plot_normal_distribution(mean, std_dev):
 st.markdown("## Visualización de la Distribución Normal")
 
 # Parámetros de entrada
-mean = st.slider('Media (mean)', -10.0, 10.0, 0.0)
-std_dev = st.slider('Desviación estándar (std_dev)', 0.1, 5.0, 1.0)
+mean = st.slider('Media (mu)', -10.0, 10.0, 0.0)
+std_dev = st.slider('Desviación estándar (sigma)', 0.1, 5.0, 1.0)
 
 # Generar gráfica
 fig3 = plot_normal_distribution(mean, std_dev)
